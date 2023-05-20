@@ -16,3 +16,8 @@ for linea in sys.stdin:
 dic_ordenado = dict(sorted(dic.items(), key=lambda x: x[0]))
 for clave, valor in dic_ordenado.items():
     print(clave, valor)
+    
+output = ""
+for key, value in dic.items():
+    output += f"{key}\t{value}\n"
+print(output.strip())
