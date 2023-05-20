@@ -1,6 +1,7 @@
 #
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
+import sys
 dic = {}
 for linea in sys.stdin:
     linea = linea.strip()
