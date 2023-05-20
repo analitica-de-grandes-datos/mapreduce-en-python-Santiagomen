@@ -3,13 +3,16 @@
 #
 import sys
 dic = {}
-for linea in sys.stdin:
+for linea in lineas:
     linea = linea.strip()
     valores = linea.split(',')
-    r = valores[2]
-    if r in dic:
-       dic[valores[2]] += 1
-    else:
-       dic[valores[2]] = 1
+    if len(valores) >= 3:
+        r = valores[2]
+        if r in dic:
+           dic[r] += 1
+        else:
+           dic[r] = 1
+
 dic_ordenado = dict(sorted(dic.items(), key=lambda x: x[0]))
 
+print(dic_ordenado)
