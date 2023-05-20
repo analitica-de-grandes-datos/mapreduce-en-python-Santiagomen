@@ -15,7 +15,6 @@ for linea in sys.stdin:
 
 dic_ordenado = dict(sorted(dic.items(), key=lambda x: x[0]))
     
-output = ""
+#output = ""
 for key, value in dic.items():
-    output += f"{key}\t{value}\n"
-print(output.strip())
+    print(f"{key}\t{value}")
