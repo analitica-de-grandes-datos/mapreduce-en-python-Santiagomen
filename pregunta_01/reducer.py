@@ -14,5 +14,5 @@ for linea in sys.stdin:
            dic[r] = 1
 
 dic_ordenado = dict(sorted(dic.items(), key=lambda x: x[0]))
-
-print(dic_ordenado)
+for clave, valor in dic_ordenado.items():
+    print(clave, valor)
