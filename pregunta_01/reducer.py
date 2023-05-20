@@ -2,7 +2,7 @@
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
 dic = {}
-for linea in lineas:
+for linea in sys.stdin:
     linea = linea.strip()
     valores = linea.split(',')
     r = valores[2]
