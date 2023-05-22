@@ -5,7 +5,7 @@ import sys
 
 for row in sys.stdin:
   fila = row.split(",")
-  amount = elementos[4]
-  purpose = elementos[3]
+  amount = fila[4]
+  purpose = fila[3]
   linea = purpose + ";" + amount
   sys.stdout.write(linea+"\n")
