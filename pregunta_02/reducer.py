@@ -3,18 +3,19 @@
 #
 import sys
 
-dict = {}
-for row in sys.stdin:
-  r = row.strip()
-  r = r.split(";")
-  if r[0] in dict.keys():
-    if int(r[1]) > dict[r[0]]:
-      dict[r[0]] = int(r[1])
-    else:
-      continue
-  else:
-    dict[r[0]] = int(r[1])
-for i in dict.keys():
-   letra = i
-   linea =  letra + "\t" + str(dict[i]) + "\n"
-   sys.stdout.write(linea)  
+if __name__ == '__main__':
+    purpose = None
+    max_value = 0
+    for line in sys.stdin:
+        purpose, valor_act = line.split("\t")
+        valor_act = int(max_value)
+        if key == purpose:
+            if valor_act > max_value:
+                max_value = valor_act
+        else:
+            if curkey is not None:
+                sys.stdout.write("{}\t{}\n".format(purpose, max_value))
+
+            purpose = key
+            max_value = val
+    sys.stdout.write("{}\t{}\n".format(purpose, max_value))
