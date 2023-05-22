@@ -2,18 +2,19 @@
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
 import sys
-if __name__ == '__main__':
-    purpose = None
-    val_max = 0
-    for line in sys.stdin:
-        key, val_act = line.split("\t")
-        val_act = int(val_act)
-        if key == purpose:
-            if val_act > total:
-                val_max = val_act
-        else:
-            if purpose is not None:
-                sys.stdout.write("{}\t{}\n".format(purpose, val_max))
-            purpose = key
-            val_max = val_act
-    sys.stdout.write("{}\t{}\n".format(purpose, val_max))
+dict2 = {}
+
+for row in sys.stdin:
+  linea = row.strip()
+  linea = linea.split(";")
+  if linea[0] in dict2.keys():
+    if int(linea[1]) > dict2[linea[0]]:
+      dict2[linea[0]] = int(linea[1])
+    
+    else:
+      continue
+  else:
+    dict[linea[0]] = int(linea[1])
+for i in dict2.keys():
+   line =  i + "\t" + str(dict2[i]) + "\n"
+   sys.stdout.write(line) 
