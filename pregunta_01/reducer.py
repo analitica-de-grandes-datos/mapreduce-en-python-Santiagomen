@@ -4,8 +4,8 @@
 import sys
 dic = {}
 for linea in sys.stdin:
-    linea = linea.strip()
-    valores = linea.split(',')
+    #linea = linea.strip()
+    #valores = linea.split(',')
     if len(valores) >= 3:
         r = valores[2]
         if r in dic:
