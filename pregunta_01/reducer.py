@@ -2,19 +2,13 @@
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
 import sys
-dic = {}
+dict = {}
 for linea in sys.stdin:
-    #linea = linea.strip()
-    #valores = linea.split(',')
-    if len(valores) >= 3:
-        r = valores[2]
-        if r in dic:
-           dic[r] += 1
-        else:
-           dic[r] = 1
-
-dic_ordenado = dict(sorted(dic.items(), key=lambda x: x[0]))
-    
-#output = ""
-for key, value in dic_ordenado.items():
-    print(f"{key}\t{value}")
+  if linea in dict.keys():
+    dict[linea] += 1
+  else:
+    dict[linea] = 1
+for i in dict.keys():
+   letra = i.strip()
+   line =  letra + "\t" + str(dict[i]) + "\n"
+   sys.stdout.write(line)  
