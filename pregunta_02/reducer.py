@@ -16,5 +16,6 @@ for row in sys.stdin:
   else:
     dict[linea[0]] = int(linea[1])
 for i in dict2.keys():
-   line =  i + "\t" + str(dict2[i]) + "\n"
+   a = i 
+   line =  a + "\t" + str(dict2[i]) + "\n"
    sys.stdout.write(line) 
