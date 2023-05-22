@@ -4,7 +4,8 @@
 import sys
 
 for linea in sys.stdin:
-    linea = linea.strip()
-    valores = linea.split(',')
-    amount = valores[4]
-    print(amount)
+  lineas = row.split(",")
+  amount = elementos[4]
+  purpose = elementos[3]
+  r = purpose + ";" + cantidad
+  sys.stdout.write(r+"\n")
