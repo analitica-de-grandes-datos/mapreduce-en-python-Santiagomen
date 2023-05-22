@@ -14,7 +14,7 @@ for row in sys.stdin:
     else:
       continue
   else:
-    dict[linea[0]] = int(linea[1])
+    dict2[linea[0]] = int(linea[1])
 for i in dict2.keys():
    a = i 
    line =  a + "\t" + str(dict2[i]) + "\n"
