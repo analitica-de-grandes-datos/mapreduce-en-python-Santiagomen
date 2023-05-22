@@ -2,20 +2,18 @@
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
 import sys
-
 if __name__ == '__main__':
     purpose = None
-    max_value = 0
+    val_max = 0
     for line in sys.stdin:
-        purpose, valor_act = line.split("\t")
-        valor_act = int(max_value)
+        key, val_act = line.split("\t")
+        val_act = int(val_act)
         if key == purpose:
-            if valor_act > max_value:
-                max_value = valor_act
+            if val_act > total:
+                val_max = val_act
         else:
-            if curkey is not None:
-                sys.stdout.write("{}\t{}\n".format(purpose, max_value))
-
+            if purpose is not None:
+                sys.stdout.write("{}\t{}\n".format(purpose, val_max))
             purpose = key
-            max_value = val
-    sys.stdout.write("{}\t{}\n".format(purpose, max_value))
+            val_max = val_act
+    sys.stdout.write("{}\t{}\n".format(purpose, val_max))
