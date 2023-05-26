@@ -13,4 +13,4 @@ import sys
 
   dict_sort = sorted(dict.items(), key=lambda x: x[1])
   for atributo,valor in dict_sort:
-      sys.stdout.write(f"{atributo},{val}\n")
+      sys.stdout.write(f"{atributo},{valor}\n")
