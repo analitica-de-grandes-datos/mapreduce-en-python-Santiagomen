@@ -5,7 +5,7 @@ import sys
 
 if __name__ == "__main__":
     for linea in sys.stdin:
-        columna = linea.split(" ")
+        columna = linea.split("   ")
         fecha = columna[1]
         mes = fecha.split("-")
         mes2 = mes[1]
