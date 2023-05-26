@@ -6,7 +6,7 @@ import sys
 if __name__ == "__main__":
     dic = {}
     for linea in sys.stdin:
-        columna = line.split("\n")
+        columna = linea.split("\n")
         letra = columna[0]
         if letra in dic:
             dic[letra]+= 1
