@@ -8,4 +8,4 @@ if __name__ == "__main__":
         columna = linea.split(" ")
         fecha = columna[1].split("-")
         mes = fecha[1]
-        sys.stdout.write(f"{mes}\n"
+        sys.stdout.write(f"{mes}\n")
