@@ -3,14 +3,15 @@
 #
 import sys
 
-  dict = {}
-  for linea in sys.stdin:
-      columna = linea.split("\t")
-     
-      letra = columna[0] 
-      val = int(columna[1])
-      dict[letra] = val
-
-  dict_sort = sorted(dict.items(), key=lambda x: x[1])
-  for atributo,valor in dict_sort:
-      sys.stdout.write(f"{atributo},{valor}\n")
+if __name__ == "__main__":
+    dic = {}
+    for linea in sys.stdin:
+        columna = linea.split("\t")
+        if len(columna) == 2:
+            letra = columna[0] 
+            val = int(columna[1])
+            dic[letra] = val
+            
+    dic_sort = sorted(dic.items(), key=lambda x: x[1])
+    for atributo,valor in dic_sort:
+        sys.stdout.write(f"{atributo},{valor}\n")
