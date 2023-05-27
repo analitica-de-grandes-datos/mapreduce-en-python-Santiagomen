@@ -13,7 +13,7 @@ if __name__ == "__main__":
             val = float(columna[1])
             
             if letra in dic:
-                dic[letra] = {'max': max(dic[letter]['max'], val),'min': min(dic[letter]['min'], val)}
+                dic[letra] = {'max': max(dic[letra]['max'], val),'min': min(dic[letra]['min'], val)}
                 #print(letra, val)
             else:
                 dic[letra] = {'max': val, 'min': val}
