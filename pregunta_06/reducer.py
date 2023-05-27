@@ -16,7 +16,7 @@ if __name__ == "__main__":
                 dic[letra] = {'max': max(dic[letter]['max'], val),'min': min(dic[letter]['min'], val)}
                 #print(letra, val)
             else:
-                dic[letter] = {'max': val, 'min': val}
+                dic[letra] = {'max': val, 'min': val}
                 
     #maximo = max(lista_valores)
     #minimo = min(lista_valores)
