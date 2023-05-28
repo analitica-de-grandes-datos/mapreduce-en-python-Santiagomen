@@ -6,7 +6,6 @@ if __name__ == "__main__":
   
     dic = {}
     for linea in sys.stdin:
-      
         columna = linea.split(",")
         
         if len(columna) == 2:
@@ -28,4 +27,4 @@ if __name__ == "__main__":
         num = values[1]
         prom = total / num
         
-        sys.stdout.write(f"{atributo}\t{sum}\t{prom}\n")
+        sys.stdout.write(f"{atributo}\t{total}\t{prom}\n")
